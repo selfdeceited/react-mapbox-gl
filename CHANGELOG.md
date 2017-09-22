@@ -16,6 +16,7 @@ See [release notes](https://github.com/alex3165/react-mapbox-gl/releases)
 - Fix issue when using `text-align: center` on a parent tag of the map
 - Fix wrong unmounting of the map
 - Fix `Layer` and `GeoJsonLayer` when changing the style of the map
+- Fix `Marker` component being incompatible for `Cluster` in ClusterMarkerFactory children (Typescript incompatibility ReactStatelessComponent <-> React.Component)
 
 ### Others
 - Improvement of the documentation

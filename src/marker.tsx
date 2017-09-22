@@ -18,11 +18,11 @@ export interface Props {
 
 const defaultClassName = ['mapboxgl-marker'];
 
-const Marker: React.StatelessComponent<Props> = props => (
-  <ProjectedLayer
-    {...{ ...props }}
-    className={getClassName(defaultClassName, props.className)}
-  />
-);
-
-export default Marker;
+export default class Marker extends React.Component<Props, {}>{
+  render() {
+    return <ProjectedLayer
+      {...{ ...this.props }}
+      className={getClassName(defaultClassName, this.props.className)}
+    />
+  }
+}
